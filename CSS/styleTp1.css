@@ -1,0 +1,60 @@
+footer {
+  font-style: normal;
+  font-size: 15px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: cornsilk;
+  color: black;
+  text-align: end;
+}
+section#equipe {
+  margin-top: none;
+}
+
+#imagescarousel {
+  /* max-width: 100%;
+  height: auto; */
+  object-fit: scale-down;
+}
+
+.img-fluid {
+  object-fit: contain;
+}
+
+#panier {
+  margin: 5px;
+}
+
+/* fieldset {
+  display: block;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  border: 2px groove (internal value);
+} */
+
+form {
+  display: block;
+  margin-top: 5em;
+}
+
+/* body:after {
+  content: ".main-footer";
+} */
+
+body::before {
+  display: block;
+  content: "";
+  height: 40px;
+}
+
+@media (min-width: 768px) {
+  .courriel-input {
+    width: 50%;
+  }
+}

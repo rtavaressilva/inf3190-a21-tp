@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr_CA">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP1 Automne 2021 - Club de lecture</title>
+
+    <!-- Mes docs -->
+    <link rel="stylesheet" type="text/css" href="/CSS/styleTp1.css" />
+    <script defer src="/JS/index.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Barre de navigation -->
+    <script id="navbar" src="/JS/index.js"></script>
+
+    <!-- Resultats recherche -->
+
+    <div class="container bs snippets bootdey">
+      <div class="row p-5">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="well search-result">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tapez voter recherche"
+              />
+              <span class="input-group-btn">
+                <button class="btn btn-primary btn-lg" type="button">
+                  <i class="glyphicon glyphicon-search"></i>
+                  Rechercher
+                </button>
+              </span>
+            </div>
+          </div>
+
+          <div class="label lead mt-3 mb-3">Nos suggestions :</div>
+
+          <div class="well search-result">
+            <div class="row">
+              <a href="#">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 mt-3 mb-3">
+                  <img
+                    class="img-responsive w-100"
+                    src="/images/catalogue/10 citrouilles effrayantes.jpeg"
+                    alt="10 citrouilles effrayantes"
+                  />
+                </div>
+                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-10 title">
+                  <h3>10 citrouilles effrayantes</h3>
+                  <p><a href="/catalogue.html#">Voir details</a></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="well search-result">
+            <div class="row">
+              <a href="#">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 mt-3 mb-3">
+                  <img
+                    class="img-responsive w-100"
+                    src="/images/catalogue/Almanac2021.jpg"
+                    alt="National Geographic Almanac 2021"
+                  />
+                </div>
+                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-10 title">
+                  <h3>National Geographic Almanac 2021</h3>
+                  <p><a href="/catalogue.html#">Voir details</a></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="well search-result">
+            <div class="row">
+              <a href="#">
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 mt-3 mb-3">
+                  <img
+                    class="img-responsive w-100"
+                    src="/images/catalogue/L'oeuf modèle.jpeg"
+                    alt="L'oeuf modèle"
+                  />
+                </div>
+                <div class="col-xs-6 col-sm-9 col-md-9 col-lg-10 title">
+                  <h3>L'oeuf modèle</h3>
+                  <p><a href="/catalogue.html#">Voir details</a></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row mt-3 mb-3">
+            <button type="button" class="btn btn-primary btn-block">
+              <i class="glyphicon glyphicon-refresh"></i>Plus de resultats...
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pied de page -->
+    <script id="footer" src="/JS/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script id="test">
+      function myFunc() {
+        document.getElementById("abc").innerHTML =
+          "Alterei um objeto do documento bobagem.html, usando o InnerHTML que faz parte do modelo do div.";
+
+        document.getElementById("btn1").innerHTML = "Botao Clicado";
+      }
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="abc">Projetos do cursos</div>
+
+    <button class="btn btn-primary" onclick="myFunc()" id="btn1">
+      Me connecter
+    </button>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr_CA">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP1 Automne 2021 - Club de lecture</title>
+
+    <!-- Mes docs -->
+    <link rel="stylesheet" type="text/css" href="/CSS/styleTp1.css" />
+    <script defer src="/JS/index.js"></script>
+
+    <!-- Bootstrap 5 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+  <body>
+      <!-- Barre de navigation -->
+    <script id="navbar" src="/JS/index.js"></script>
+
+<!-- Barre de recherche -->
+
+<div class="d-flex p-5">
+        <div class="input-group">
+          <input id="barrerecherche" type="text" class="form-control" placeholder="Tapez votre recherche">
+          <button class="btn btn-lg btn-primary" onclick="window.open('/resultats-recherche.html','_blank')" type="submit">Rechercher</button>
+          </div>
+        <!-- Panier -->
+        <div>
+          <button id="panier" type="button" class="btn btn-outline-primary btn-md">  
+            <span><a href="#"><b>Mon panier</b> <i class="bi bi-cart2"></i></a></span> 
+        </div>        
+      </div>
+
+
+      
+      
+      <!-- Section Speciaux -->
+      <section class=" p-5 p-md-3 pt-md-3 text-center text-md">
+        <div class="container">
+          <div class="d-md-flex align-items-center justify-content-between">
+            <div>
+              <h2><span class="text-warning">Speciaux</span> de la semaine</h2>
+              <!-- livres en rabais -->
+              <p class="lead my-4">
+                Toujours une lecture interessante à prix reduit!
+              </p>
+              <button class="btn btn-primary btn-lg">Voir les offres!</button>
+            </div>
+            
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide p-3" data-bs-ride="carousel">
+      
+              <!-- Indicators -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              </div>
+      
+               <!-- Slideshow  -->
+              <div id="imagescarousel" class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="/images/sutterlin-1362879__340.webp"
+              alt="plusieurs livres">                
+              </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="/images/old-books-436498__340.jpeg"
+              alt="almanac21">                
+              </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="/images/fairy-tale-1077863__340.jpeg"
+              alt="fairy">                
+              </div>
+            </div>
+              
+            <!-- Controles gauche/droite -->              
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon btn btn-secondary"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon btn btn-secondary"></span>
+            </button>
+            <!-- /Carousel -->            
+          </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Newsletter -->
+      <section class="bg-primary text-light p-5">
+        <div class="container">
+          <div class="d-md-flex justify-content-between align-items-center">
+            <h3 class="mb-3 mb-md-3>">Recevoir nos offres par courriel</h3>
+            <div class="input-group courriel-input">
+              <input type="text" class="form-control" 
+              placeholder="Votre courriel" 
+              aria-label="Votre courriel" 
+              aria-describedby="button-addon2">
+              <button class="btn btn-dark btn-md" type="button">Envoyer</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Boites -->
+      <section class="p-5">
+        <div class="container">
+<div class="row text-center">
+<div class="col-md p-1">
+  <div class="card bg-dark text-light">
+    <div class="card-body text-center">
+<div class="h1 mb-3">
+  <i class="bi bi-laptop"></i>
+</div>
+<h3 class="card-title mb-3">Votre compte</h3>
+    </div>
+    <p class="card-text">
+      Se connecter à votre compte
+    </p>
+    <a href="connexion.html" class="btn btn-primary">Connection</a>
+  </div>
+</div>
+
+<div class="col-md p-1">
+  <div class="card bg-dark text-light">
+    <div class="card-body text-center">
+<div class="h1 mb-3">
+  <i class="bi bi-book-half"></i>
+</div>
+<h3 class="card-title mb-3">Le Club</h3>
+    </div>
+    <p class="card-text">
+      Cette page conduit vers une page Youtube
+    </p>
+    <a id="leclub" href="leclub.html" class="btn btn-primary">Decouvrez!</a>
+  </div>
+</div>
+
+<div class="col-md p-1">
+  <div class="card bg-dark text-light">
+    <div class="card-body text-center">
+<div class="h1 mb-3">
+  <i class="bi bi-search"></i>
+</div>
+<h3 class="card-title mb-3">Chercher</h3>
+    </div>
+    <p class="card-text">
+      Cherche notre catalogue
+    </p>
+    <a href="/resultats-recherche.html" class="btn btn-primary">Recherche</a>
+  </div>
+</div>
+
+  <div class="col-md p-1">
+    <div class="card bg-dark text-light">
+      <div class="card-body text-center">
+  <div class="h1 mb-3">
+    <i class="bi bi-people"></i>
+  </div>
+  <h3 class="card-title mb-3">Contacts</h3>
+      </div>
+      <p class="card-text">
+        Qui sommes nous?
+      </p>
+      <a href="contacts.html" class="btn btn-primary">Contacts</a>
+    </div>
+</div>
+
+</div>
+</div>
+      </section>
+
+
+
+      <!-- Savoir plus -->
+
+    <section id="savoirplus" class="p-5">
+<div class="container">
+<div class="row align-items-center justify-content-between">
+<div class="col-md">
+  <img src="/images/fairy-tale-1077863__340.jpeg" class="img-fluid" alt="Almanac 2021">
+</div>
+<div class="col-md p-5">
+  <h2>À chaque page, une histoire fascinante!</h2>
+  <p class="lead">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptas illo repudiandae, repellat ipsum magni!
+  </p>
+  <a href="" class="btn btn-light mt-3">
+  <i class="bi bi-chevron-right"></i> Savoir plus!
+  </a>
+</div>
+</div>
+</div>
+    </section>
+
+    <!-- Section 2 - Catalogue -->
+
+    <section id="Catalogue" class="p-5 bg-dark text-light">
+      <div class="container">
+      <div class="row align-items-center justify-content-between">
+      
+      <div class="col-md p-5">
+        <h2>Voir le catalogue</h2>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptas illo repudiandae, repellat ipsum magni!
+        </p>
+        <a href="" class="btn btn-light mt-3">
+        <i class="bi bi-chevron-right"></i> Visiter la page!
+        </a>
+      </div>
+      <div class="col-md">
+        <img src="/images/old-books-436498__340.jpeg" class="img-fluid" alt="Almanac 2021">
+      </div>
+      </div>
+      </div>
+          </section>
+
+    <!-- Pied de page -->
+    <script id="footer" src="/JS/index.js"></script>
+
+    <!-- JS & JQuery (Source: https://getbootstrap.com/docs/4.1/getting-started/introduction/)  -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
